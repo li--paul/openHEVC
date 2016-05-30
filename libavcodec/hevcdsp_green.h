@@ -18,13 +18,13 @@ DECLARE_ALIGNED(16, const int8_t, ff_hevc_epel_green1_filters[7][1]) = {
 };
 
 DECLARE_ALIGNED(16, const int8_t, ff_hevc_epel_green2_filters[7][2]) = {
-    { 54, 10},
-    { 54, 10},
-    { 54, 10},
-    { 54, 10},
-    { 10, 54},
-    { 10, 54},
-    { 10, 54}
+	{ 58,  6 },
+	{ 50, 14 },
+	{ 41, 23 },
+	{ 32, 32 },
+	{ 23, 41 },
+	{ 14, 50 },
+	{  6, 58 },
 };
 
 DECLARE_ALIGNED(16, const int8_t, ff_hevc_epel_green3_filters[7][3]) = {
@@ -38,15 +38,15 @@ DECLARE_ALIGNED(16, const int8_t, ff_hevc_epel_green3_filters[7][3]) = {
 };
 
 DECLARE_ALIGNED(16, const int8_t, ff_hevc_qpel_green5_filters[3][5]) = {
-    { 1, -8, 58, 16, -3},
+    { 1, -6, 20, 54, -5},
     { 2, -9, 40, 40, -9},
-    { 1, -4, 17, 54, -4}
+    {-5, 54, 20, -6,  1}
 };
 
 DECLARE_ALIGNED(16, const int8_t, ff_hevc_qpel_green3_filters[3][3]) = {
-    { -8, 58, 14},
-    { -8, 40, 32},
-    {  -4, 20, 48}
+    { -4, 20, 48},
+    { -9, 41, 32},
+    { 48, 20, -4}
 };
 
 
