@@ -49,12 +49,6 @@ DECLARE_ALIGNED(16, const int8_t, ff_hevc_qpel_green3_filters[3][3]) = {
     {  -4, 20, 48}
 };
 
-DECLARE_ALIGNED(16, const int8_t, ff_hevc_qpel_green1_filters[3][2]) = {
-	{ 64, 0},
-	{ 64, 0},
-	{ 0, 64}
-};
-
 
 /** Green reload functions */
 void green_reload_filter_luma1(HEVCDSPContext *c, const int bit_depth);
